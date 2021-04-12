@@ -2,10 +2,12 @@
 
 ==================================
 ### Requirements:
-1. RDkit (http://www.rdkit.org/)
-2. pandas (https://pandas.pydata.org/)
-3. Scikit-learn (https://scikit-learn.org/stable/)
-4. Streamlit==0.55.2 (https://streamlit.io/)
+
+1. Python 2.7
+2. RDkit (http://www.rdkit.org/)
+3. pandas (https://pandas.pydata.org/)
+4. Scikit-learn (https://scikit-learn.org/stable/)
+5. Streamlit==0.55.2 (https://streamlit.io/)
 
 ==================================
 ### Gibbs free energy prediction use automated group decomposition method
