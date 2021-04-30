@@ -44,6 +44,11 @@ def count_substructures(radius,molecule):
                 smi_count[smi] = smi_count[smi] + 1
             else:
                 smi_count[smi] = 1
+    
+    if bool(smi_count)==False and radius==1:
+        smi = Chem.MolToSmiles(m)
+        smi_count[smi] = 1
+    
     return smi_count
 
 def decompse_ac(db_smiles,radius=1):
