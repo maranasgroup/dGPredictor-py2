@@ -9,7 +9,7 @@ import pickle
 import sys 
 from sklearn.externals import joblib
 
-sys.path.append('./../../../phd/Res/NovoStoic/cc/component-contribution')
+sys.path.append('./../component-contribution')
 
 from rdkit import Chem
 from rdkit.Chem import Draw
