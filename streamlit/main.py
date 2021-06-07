@@ -382,7 +382,7 @@ def main():
     st.subheader('Reaction (please use KEGG IDs)')
 
     # rxn_str = st.text_input('Reaction using KEGG ids:', value='C16688 + C00001 <=> C00095 + C00092')
-    rxn_str = st.text_input('', value='C18283 + C00007 + C00004 + C00080 <=> N00001 + C00003')
+    rxn_str = st.text_input('', value='C01745 + C00004 <=> N00001 + C00003 + C00001')
     # rxn_str = st.text_input('', value='C16688 + C00001 <=> C00095 + C00092')
 
     # url = 'https://www.genome.jp/dbget-bin/www_bget?rn:R00801'
@@ -392,7 +392,7 @@ def main():
     if st.checkbox('Reaction has metabolites not in KEGG'):
         # st.subheader('test')
         add_info = st.text_area('Additional information (id: InChI):', 
-            '{"N00001":"InChI=1/C19H14O4/c20-16-10-7-12-6-8-14-13-4-2-1-3-11(13)5-9-15(14)17(12)19(16,23)18(21)22/h1-10,16,20,23H,(H,21,22)"}')
+            '{"N00001":"InChI=1S/C14H14O/c15-14-8-4-7-13(11-14)10-9-12-5-2-1-3-6-12/h1-8,11,15H,9-10H2"}')
     else:
         add_info = '{"None":"None"}'
 
