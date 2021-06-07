@@ -8,7 +8,7 @@
 3. pandas (https://pandas.pydata.org/)
 4. Scikit-learn (https://scikit-learn.org/stable/)
 5. Streamlit==0.55.2 (https://streamlit.io/)
-6. Component-contribution (https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/vuu10_psu_edu/EvF9kttgsvlJnhAs1FDRWFcBu0obprfFFjrZKJbq-Yw5sw?e=pBPP8X)- save the folder inside dGPredictor 
+6. Component-contribution (https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/vuu10_psu_edu/EvF9kttgsvlJnhAs1FDRWFcBu0obprfFFjrZKJbq-Yw5sw?e=dPHo2w)- save the folder inside dGPredictor 
 
 ==================================
 ### Gibbs free energy prediction use automated group decomposition method
