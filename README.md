@@ -9,6 +9,7 @@
 4. Scikit-learn (https://scikit-learn.org/stable/)
 5. Streamlit==0.55.2 (https://streamlit.io/)- use command "pip install -U streamlit"
 6. Component-contribution (https://pennstateoffice365-my.sharepoint.com/:f:/g/personal/vuu10_psu_edu/EvF9kttgsvlJnhAs1FDRWFcBu0obprfFFjrZKJbq-Yw5sw?e=dPHo2w)- save the folder inside dGPredictor 
+7. Openbabel (https://anaconda.org/openbabel/openbabel) - run "conda install -c openbabel openbabel" for installation
 
 ==================================
 ### Gibbs free energy prediction use automated group decomposition method
