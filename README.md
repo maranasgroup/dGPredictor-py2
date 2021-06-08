@@ -28,5 +28,5 @@ different conditions or by different researchers)
 - run "streamlit run ./streamlit/main.py"
 
 # demo
-![dGPredictor Demo](figures/demo.gif)
+![dGPredictor Demo](figures/dg_demo.gif)
 
