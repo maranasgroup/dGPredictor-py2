@@ -31,7 +31,7 @@ Recommended-
 7. Openbabel
 - run "conda install -c openbabel openbabel" 
 8. ChemAxon's Marvin (Component-contribution use this to estimate PkA values)
-- Marvin is only required for adding structures of new compounds that are not in the KEGG database
+- Marvin is only required for adding structures of novel metabolites/compounds that are not in the KEGG database
 - instructions (https://chemaxon.com/products/marvin/download)
 - add cxcalc.bat to PATH
 - you will need to get a license to use ChemAxon (it is free for academic use)
