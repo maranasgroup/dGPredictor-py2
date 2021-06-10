@@ -9,7 +9,7 @@ import pickle
 import sys 
 from sklearn.externals import joblib
 
-sys.path.append('./../component-contribution')
+sys.path.append('./component-contribution')
 
 from rdkit import Chem
 from rdkit.Chem import Draw
@@ -20,23 +20,23 @@ from component_contribution.compound import Compound
 
 @st.cache(allow_output_mutation=True)
 def load_smiles():
-    db = pd.read_csv('../data/cache_compounds_20160818.csv',index_col='compound_id')
+    db = pd.read_csv('./data/cache_compounds_20160818.csv',index_col='compound_id')
     db_smiles = db['smiles_pH7'].to_dict()
     return db_smiles
 
 @st.cache(allow_output_mutation=True)
 def load_molsig_rad1():
-    molecular_signature_r1 = json.load(open('../data/decompose_vector_ac.json'))
+    molecular_signature_r1 = json.load(open('./data/decompose_vector_ac.json'))
     return molecular_signature_r1
 
 @st.cache(allow_output_mutation=True)
 def load_molsig_rad2():
-    molecular_signature_r2 = json.load(open('../data/decompose_vector_ac_r2_py3_indent_modified_manual.json'))
+    molecular_signature_r2 = json.load(open('./data/decompose_vector_ac_r2_py3_indent_modified_manual.json'))
     return molecular_signature_r2
 
 @st.cache(allow_output_mutation=True)
 def load_model():
-    filename = '../model/M12_model_BR.pkl'
+    filename = './model/M12_model_BR.pkl'
     loaded_model = joblib.load(open(filename, 'rb'))
     return loaded_model
 
@@ -377,7 +377,7 @@ def main():
     loaded_model = load_model()
     ccache = load_compound_cache()
 
-    st.image('../figures/header.png',use_column_width=True)
+    st.image('./figures/header.png',use_column_width=True)
 
     st.subheader('Reaction (please use KEGG IDs)')
 
