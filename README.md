@@ -40,7 +40,7 @@ Recommended-
 
 ==================================
 ### Running web-interface loacally using streamlit
-- run "streamlit run ./streamlit/main.py"
+- run "streamlit run ./streamlit/main.py" from dGPredictor folder
 
 ### Gibbs free energy prediction use automated group decomposition method
 
