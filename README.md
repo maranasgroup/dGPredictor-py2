@@ -46,6 +46,7 @@ Recommended-
 
 - Generate model file by "running model_gen.py" using "python model_gen.py" 
 - run "streamlit run ./streamlit/main.py" from dGPredictor folder
+- running KEGG reaction (doesn't require ChemAxon's Marvin) : copy paste the reaction equation into reaction section and click search
 
 ### Gibbs free energy prediction use automated group decomposition method
 
