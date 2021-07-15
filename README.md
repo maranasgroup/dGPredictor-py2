@@ -19,11 +19,11 @@ Recommended-
 - Create anaconda environment using command "conda create -n dGPredictor python=2.7"
 - activate the env using command "conda activate dGPredictor" or "source activate dGPredictor"
 2. RDkit
-- type command "conda install -c rdkit rdkit" in your dGPredictor env to install rdkit
+- type command "conda install -c conda-forge rdkit" in your dGPredictor env to install rdkit
 3. Pandas
 - "conda install pandas"
 4. matplotlib
-- "conda install matplotlib"
+- "conda install -c conda-forge matplotlib"
 5. Scikit-learn
 - use command "pip install -U scikit-learn"
 6. Streamlit 
@@ -32,7 +32,7 @@ Recommended-
 - download the package folder using the link provided
 - save the folder inside dGPredictor (delete the empty component-contribution folder)
 8. Openbabel
-- run "conda install -c openbabel openbabel" 
+- run "conda install -c conda-forge openbabel" 
 9. ChemAxon's Marvin (Component-contribution use this to estimate PkA values)
 - Marvin is only required for adding structures of novel metabolites/compounds that are not in the KEGG database
 - instructions (https://chemaxon.com/products/marvin/download)
