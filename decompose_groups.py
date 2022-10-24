@@ -27,22 +27,28 @@ def count_substructures(radius,molecule):
 
     for i in range(len(atomList)):
         env = Chem.FindAtomEnvironmentOfRadiusN(m,radius,i)
-        atoms=set()
-        for bidx in env:
-            atoms.add(m.GetBondWithIdx(bidx).GetBeginAtomIdx())
-            atoms.add(m.GetBondWithIdx(bidx).GetEndAtomIdx())
+        if len(env) >= 1:
+            atoms=set()
+            for bidx in env:
+                atoms.add(m.GetBondWithIdx(bidx).GetBeginAtomIdx())
+                atoms.add(m.GetBondWithIdx(bidx).GetEndAtomIdx())
 
-        # only one atom is in this environment, such as O in H2O
-        if len(atoms) == 0:
-            atoms = {i}
+            # only one atom is in this environment, such as O in H2O
+            if len(atoms) == 0:
+                atoms = {i}
 
-        smi = Chem.MolFragmentToSmiles(m,atomsToUse=list(atoms),
-                                    bondsToUse=env,canonical=True)
+            smi = Chem.MolFragmentToSmiles(m,atomsToUse=list(atoms),
+                                        bondsToUse=env,canonical=True)
 
-        if smi in smi_count:
-            smi_count[smi] = smi_count[smi] + 1
-        else:
-            smi_count[smi] = 1
+            if smi in smi_count:
+                smi_count[smi] = smi_count[smi] + 1
+            else:
+                smi_count[smi] = 1
+    
+    if bool(smi_count)==False and radius==1:
+        smi = Chem.MolToSmiles(m)
+        smi_count[smi] = 1
+    
     return smi_count
 
 def decompse_ac(db_smiles,radius=1):
